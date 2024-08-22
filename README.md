@@ -14,7 +14,7 @@ The **Lelevar SMS Package** is a Laravel package for sending SMS messages via th
 Install the package via Composer by running the following command in your Laravel project directory:
 
 ```bash
-composer require yourusername/laravel-sms-package
+composer require lelevar/lelevar-sms-package
 ```
 
 ### Service Provider
