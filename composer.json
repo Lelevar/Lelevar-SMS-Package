@@ -1,6 +1,6 @@
 {
   "name": "lelevar/sms",
-  "description": "A Laravel package for sending SMS via Lelevar API",
+  "description": "Lelevar SMS Package for Laravel simplifies SMS sending via the Lelevar SMS API. It supports single and bulk SMS messaging with easy API key configuration, optional facades, and a helper function for quick integration. Ideal for integrating SMS into Laravel apps effortlessly.",
   "type": "library",
   "license": "MIT",
   "autoload": {
