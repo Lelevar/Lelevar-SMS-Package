@@ -9,7 +9,6 @@ The **Lelevar SMS Package** is a Laravel package for sending SMS messages via th
 - Support for API key configuration
 
 ## Installation
-
 ### Via Composer
 Install the package via Composer by running the following command in your Laravel project directory:
 
