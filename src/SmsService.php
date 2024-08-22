@@ -21,12 +21,19 @@ class SmsService
     {
         $client = new Client();
         try {
+            if(!$this->apiKey){
+                return (object) ['success' => false, 'error' => "Lelevar SMS API key not provided."];
+            }
+            $senderName = $params['sender_name'] ?? $this->apiSenderName;
+            if(!$senderName){
+                return (object) ['success' => false, 'error' => "Sender name not provided."];
+            }
             $response = $client->post($this->apiUrl . "/sms/compose/new", [
                 'json' => [
                     'compose_type' => $params['compose_type'] ?? 1,
                     'content' => $params['content'],
                     'mobile' => $params['mobile'],
-                    'sender_name' => $params['sender_name'] ?? $this->apiSenderName,
+                    'sender_name' => $senderName,
                 ],
                 'headers' => [
                     'Authorization' => 'Bearer ' . $this->apiKey,
